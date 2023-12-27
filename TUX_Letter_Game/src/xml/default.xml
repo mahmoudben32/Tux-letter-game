@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profil xmlns="http://myGame/tux" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://myGame/tux ./profil.xsd">
+        
+    <nom>Default</nom>
+        
+    <avatar>default.jpg</avatar>
+        
+    <anniversaire>2006-05-08</anniversaire>
+        
+    
+    <parties>
+                
+  
+    
+        <partie date="2023-12-01" trouve="100">
+            <temps>14.0</temps>
+            <mot niveau="1">jus</mot>
+        </partie>
+    </parties>
+    
+</profil>

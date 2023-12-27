@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profil>
+        
+    <nom>qw</nom>
+        
+    <avatar>qw.jpg</avatar>
+        
+    <anniversaire/>
+        
+    <parties>
+        <partie date="2023-12-01" trouve="100">
+            <temps>9.0</temps>
+            <mot niveau="2">lune</mot>
+        </partie>
+    </parties>
+    
+</profil>

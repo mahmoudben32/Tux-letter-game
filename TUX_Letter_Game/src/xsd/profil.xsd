@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xsd:schema version="1.0"
+           targetNamespace="http://myGame/tux"
+           xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xmlns:tux="http://myGame/tux"
+           elementFormDefault="qualified">
+    <xsd:include schemaLocation="dico.xsd"/>
+           
+    
+    <xsd:element name="profil" type="tux:Profil"/>
+    
+    <xsd:complexType name="Profil">
+        <xsd:sequence>
+            <xsd:element name="nom" type="xsd:string"/>
+            <xsd:element name="avatar" type="tux:NomFichier"/>
+            <xsd:element name="anniversaire" type="xsd:date"/>
+            <xsd:element name="parties" type="tux:Parties"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    
+    <xsd:complexType name="Parties">
+        <xsd:sequence>
+            <xsd:element name="partie" type="tux:Partie" minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Partie">
+        <xsd:sequence>
+            <xsd:element name="temps" type="tux:DoublePositif" minOccurs="0"/>
+            <xsd:element name="mot" type="tux:Mot"/>
+        </xsd:sequence>
+        <xsd:attribute name="date" type="xsd:date"/> <!-- on peut pas avoir une séquence après l'attribut -->
+        <xsd:attribute name="trouvé" type="tux:Pourcentage"/>
+    </xsd:complexType>
+    
+    <xsd:simpleType name="DoublePositif">
+        <xsd:restriction base="xsd:double">
+            <xsd:minExclusive value="0.0"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:simpleType name="Pourcentage">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d+(\.\d+)?%"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+        <xsd:simpleType name="NomFichier">
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="[a-zA-Z0-9_.-]+" />
+            </xsd:restriction>
+        </xsd:simpleType>
+
+</xsd:schema>
+
+    

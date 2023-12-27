@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dictionnaire xmlns="http://myGame/tux" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:schemaLocation="http://myGame/tux ../xsd/dico.xsd">
+
+
+
+    <mot niveau="1">jus</mot>
+    <mot niveau="1">pain</mot>
+    <mot niveau="1">chat</mot>
+    
+    <mot niveau="2">jaune</mot>
+    <mot niveau="2">neige</mot>
+    <mot niveau="2">avion</mot>
+    
+    <mot niveau="3">champs</mot>
+    <mot niveau="3">riviere</mot>
+    <mot niveau="3">direction</mot>
+    
+    <mot niveau="4">leopard</mot>
+    <mot niveau="4">elephant</mot>
+    <mot niveau="4">etagere</mot>
+    
+    <mot niveau="5">republique</mot>
+    <mot niveau="5">anticonstitutionnellement</mot>
+    <mot niveau="5">telecommande</mot>
+
+</dictionnaire>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<tux:profil xmlns:tux="http://myGame/tux" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:schemaLocation="http://myGame/tux ../xsd/profil.xsd">
+        
+    <tux:nom>Alban</tux:nom>
+    <tux:avatar>conan.jpg</tux:avatar>
+    <tux:anniversaire>2006-05-08</tux:anniversaire>
+    <tux:parties>
+        <tux:partie date="2013-12-10">
+            <tux:temps>20.0</tux:temps>
+            <tux:mot niveau="1">cle</tux:mot>
+        </tux:partie>
+        <tux:partie date="2013-12-11" trouvé="75%">
+            <tux:mot niveau="2">indice</tux:mot>
+        </tux:partie>
+        <tux:partie date="2013-12-11">
+            <tux:temps>20.0</tux:temps>
+            <tux:mot niveau="2">indice</tux:mot>
+        </tux:partie>
+    </tux:parties>
+</tux:profil>
